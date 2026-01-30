@@ -1,12 +1,14 @@
-name: maaz abbasi
-on:
-   push:
-       branches: [ main ]
+name: My First Workflow
+
+on: push
 
 jobs:
-     demo:
-       runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-       steps:
-          - name: Greetings
-            run: echo"helloo from apun"
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run echo command
+        run: echo "Hello GitHub Workflow!"
