@@ -1,5 +1,4 @@
 name: maaz abbasi
-
 on:
    push:
        branches: [ main ]
